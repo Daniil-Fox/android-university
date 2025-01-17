@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-46dp">
+
+    <ImageView
+        android:id="@+id/sky"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/sky"
+        android:src="@drawable/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="323dp"
+        android:contentDescription="@string/sun"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toTopOf="@+id/grass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/grass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/grass"
+        android:src="@drawable/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hour_hand" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="326dp"
+        android:layout_marginBottom="135dp"
+        android:contentDescription="@string/clock"
+        android:padding="10dp"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toTopOf="@+id/grass"
+        app:layout_constraintStart_toStartOf="@+id/sun"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hour_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="326dp"
+        android:layout_marginBottom="135dp"
+        android:contentDescription="@string/clock"
+        android:padding="10dp"
+        android:src="@drawable/hour_hand"
+        app:layout_constraintBottom_toTopOf="@+id/grass"
+        app:layout_constraintStart_toStartOf="@+id/clock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
